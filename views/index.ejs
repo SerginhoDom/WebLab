@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head'); %>
+</head>
+<body>
+<header>
+  <%- include('partials/header'); %>
+</header>
+<div class="wrapper">
+  <span class="nickname">Author: <%=post.name%></span>
+  <span class="date"><%=post.date%></span>
+  <div class="title2"><%=post.title%></div>
+  <div class="text"><%=post.body%></div>
+</div>
+
+<form method="post">
+  <p><b>Name:</b><br>
+    <input required type="text" size="40" name = 'UserName'>
+  <p><b>E - mail:</b><br>
+    <input required type="text" size="40" name = 'Mail'>
+  <p><b>Site:</b><br>
+    <input type="text" size="40" name = 'URL'>
+  <p><b>Comment:</b><Br>
+    <textarea required name = 'Comment_text' cols="40" rows="3"></textarea></p>
+  <p><input type="submit" value="Отправить">
+    <input type="reset" value="Очистить"></p>
+</form>
+<footer>
+  <%- include('partials/footer'); %>
+</footer>
+</body>
+</html>
